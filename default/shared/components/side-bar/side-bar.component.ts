@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+import { SidenavMenuService } from '../sidenav-menu/sidenav-menu.service';
+
+@Component({
+  selector: 'app-spares-side-bar',
+  templateUrl: './side-bar.component.html',
+  styleUrls: ['./side-bar.component.scss']
+})
+export class SideBarComponent implements OnInit {
+  // nav bar data
+  public sidenavMenuItems: Array<any>;
+  sidenav: any;
+  constructor(public sidenavMenuService: SidenavMenuService) {}
+  // initially get data from getSidenavMenuItems using  service
+  ngOnInit() {
+    this.sidenavMenuItems = this.sidenavMenuService.getSidenavMenuItems();
+  }
+}
