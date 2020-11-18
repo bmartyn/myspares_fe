@@ -1,9 +1,10 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule} from '@angular/common'; 
 
-import {LayoutContainerComponent} from './layout/layout.container';
 import {ComponentsModule} from '../shared/components/index';
 import {SharedModule} from '../shared/shared.module';
+import {LayoutContainerComponent} from './layout/layout.container';
+
 
 
 
@@ -16,7 +17,7 @@ export const CONTAINERS = {
       ComponentsModule,
       SharedModule,
   ],
-  declarations: [],
+  declarations: [LayoutContainerComponent],
   providers: []
 })
 export class ContainerModule {

@@ -14,7 +14,8 @@ import {
   FormGroup,
   Validators
 } from '@angular/forms';
-import { MatSnackBar, MatStepper } from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import {  MatStepper } from '@angular/material/stepper';
 import { emailValidator } from '../../theme/utils/app-validators';
 import { ProductControlSandbox } from '../../../core/product-control/product-control.sandbox';
 import { ListsSandbox } from '../../../core/lists/lists.sandbox';
@@ -22,7 +23,7 @@ import { ConfigService } from '../../../core/service/config.service';
 import { AccountSandbox } from '../../../core/account/account.sandbox';
 import { CommonSandbox } from '../../../core/common/common.sandbox';
 import { Subscription } from 'rxjs';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 import { AuthSandbox } from '../../../core/auth/auth.sandbox';
 import { Router } from '@angular/router';
 

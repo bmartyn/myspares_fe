@@ -7,7 +7,7 @@
 
     <div class="order-content">
 
-        <div class="flex order-row" *ngIf="(!accountSandbox.orderHistoryDetailLoading$ | async) && (accountSandbox.orderHistoryDetailLoaded$ | async)">
+        <div class="flex order-row" *ngIf="!(accountSandbox.orderHistoryDetailLoading$ | async) && (accountSandbox.orderHistoryDetailLoaded$ | async)">
 
             <div class="order-col">
                 <h3>Order Id #{{(accountSandbox.orderHistoryDetail$ | async).orderId }}</h3>

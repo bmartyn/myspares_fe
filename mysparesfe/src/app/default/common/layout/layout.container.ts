@@ -4,7 +4,7 @@ import {Router, NavigationEnd} from '@angular/router';
 import {Settings, AppSettings} from '../../app.settings';
 import {SidenavMenuService} from '../../shared/components/sidenav-menu/sidenav-menu.service';
 import {ListsSandbox} from '../../../core/lists/lists.sandbox';
-import {Subscription} from 'rxjs';
+import {Subscription} from 'rxjs'; 
 
 @Component({
     selector: 'app-layout',

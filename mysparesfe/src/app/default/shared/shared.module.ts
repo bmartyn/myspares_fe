@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { AgmCoreModule } from '@agm/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SwiperModule } from 'ngx-swiper-wrapper';
@@ -36,7 +37,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {MatNativeDateModule} from '@angular/material/core/datetime'
+import {MatNativeDateModule} from '@angular/material/core'
 import { MatTreeModule } from '@angular/material/tree';
 // import {
 //   MatAutocompleteModule,
@@ -74,11 +75,13 @@ import { MatTreeModule } from '@angular/material/tree';
 // component
 import { SpinnerComponent } from './spinner/spinner.component';
 import { BannersComponent } from './components/banners/banners.component';
+import { GetDirectionsComponent } from './get-directions/get-directions.component';
 import {
   PERFECT_SCROLLBAR_CONFIG,
   PerfectScrollbarConfigInterface
 } from 'ngx-perfect-scrollbar';
 import { PipesModule } from './pipes/pipes.module';
+ 
 import { Effect, EffectsModule } from '@ngrx/effects';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -92,6 +95,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     RouterModule,
     SwiperModule,
     FlexLayoutModule,
+    AgmCoreModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,

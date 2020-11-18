@@ -1,6 +1,6 @@
 import { ListsSandbox } from './../../../../../core/lists/lists.sandbox';
 import { Component, ViewEncapsulation, OnInit, Inject, AfterViewInit } from '@angular/core';
-import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/snack-bar';
+import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {SwiperConfigInterface} from 'ngx-swiper-wrapper';
 import {ConfigService} from '../../../../../core/service/config.service';
 import { Router } from '@angular/router';

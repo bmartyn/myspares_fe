@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { ConfigService } from '../../../../core/service/config.service';
 import { CommonSandbox } from '../../../../core/common/common.sandbox';
 import { ProductControlSandbox } from '../../../../core/product-control/product-control.sandbox';
-import { environment } from '../../../../environments/environment';
+import { environment } from '../../../../../environments/environment';
 import { isPlatformBrowser } from '@angular/common';
 import { ListsSandbox } from '../../../../core/lists/lists.sandbox';
 import { MatSnackBar } from '@angular/material/snack-bar';

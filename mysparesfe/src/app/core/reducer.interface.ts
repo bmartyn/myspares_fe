@@ -5,7 +5,7 @@ import * as fromAccount from '../core/account/reducer/account.reducer';
 import * as fromProductControl from '../core/product-control/reducer/product-control.reducer';
 import * as fromCommon from '../core/common/reducer/common.reducer';
 import * as fromList from '../core/lists/reducer/lists.reducer';
-import { environment } from '../environments/environment';
+import { environment } from '../../environments/environment';
 
 export const reducers: ActionReducerMap<State> = {
   auth: fromAuth.reducer,

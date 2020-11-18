@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of, throwError as observableThrowError } from 'rxjs';
-import { environment } from './../../../environments/environment';
+import { environment } from './../../../../environments/environment';
 import { ConfigService } from '../../service/config.service';
 
 export const httpOptions = {

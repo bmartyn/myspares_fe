@@ -17,11 +17,11 @@ export const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: './pages/home/home.module#HomeModule'
+        loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'home',
-        loadChildren: './pages/home/home.module#HomeModule'
+        loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
       },
 
       {
@@ -41,14 +41,14 @@ export const routes: Routes = [
       {
         path: 'account',
         canActivate: [AuthGuard],
-        loadChildren: './pages/account/account.module#AccountModule',
+        loadChildren: () => import('./pages/account/account.module').then(m => m.AccountModule),
         data: {
           urls: [{ title: 'Account Settings', url: '' }]
         }
       },
       {
         path: 'cart',
-        loadChildren: './pages/cart/cart.module#CartModule',
+        loadChildren: () => import('./pages/cart/cart.module').then(m => m.CartModule),
         data: {
           urls: [{ title: 'Cart', url: '' }]
         }
@@ -56,14 +56,14 @@ export const routes: Routes = [
       {
         path: 'checkout',
         // canActivate: [AuthGuard],
-        loadChildren: './pages/checkout/checkout.module#CheckoutModule',
+        loadChildren: () => import('./pages/checkout/checkout.module').then(m => m.CheckoutModule),
         data: {
           urls: [{ title: 'Checkout', url: '' }]
         }
       },
       {
         path: 'contact',
-        loadChildren: './pages/contact/contact.module#ContactModule',
+        loadChildren: () => import('./pages/contact/contact.module').then(m => m.ContactModule),
         // canActivate: [AuthGuard],
         data: {
           urls: [{ title: 'Contact', url: '' }]
@@ -73,7 +73,7 @@ export const routes: Routes = [
         path: 'auth',
         canActivate: [AuthGuard],
         loadChildren:
-          './pages/Authentication/authentication.module#AuthenticationModule',
+          () => import('./pages/Authentication/authentication.module').then(m => m.AuthenticationModule),
         data: {
           urls: [{ title: 'Sign In', url: '' }]
         }
@@ -84,11 +84,11 @@ export const routes: Routes = [
       },
       {
         path: 'products',
-        loadChildren: './pages/products/products.module#ProductsModule'
+        loadChildren: () => import('./pages/products/products.module').then(m => m.ProductsModule)
       },
       {
         path: 'products/:id',
-        loadChildren: './pages/products/products.module#ProductsModule',
+        loadChildren: () => import('./pages/products/products.module').then(m => m.ProductsModule),
         data: {
           urls: [{ title: 'Product Detail ', url: '' }]
         }

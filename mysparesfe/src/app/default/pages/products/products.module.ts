@@ -14,7 +14,7 @@ import { ProductZoomComponent } from './product/product-zoom/product-zoom.compon
 import { PipesModule } from '../../shared/pipes/pipes.module';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
+//import { JwSocialButtonsModule } from 'jw-angular-social-buttons';
 import { ShareButtonModule } from '@ngx-share/button';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons/faFacebookSquare';
@@ -72,7 +72,7 @@ const shareProp = {
     SharedModule,
     ComponentsModule,
     PipesModule,
-    JwSocialButtonsModule,
+    //JwSocialButtonsModule,
     ShareButtonModule.withConfig({ prop: shareProp }),
     // ShareButtonModule.forRoot(),
     HttpClientModule,

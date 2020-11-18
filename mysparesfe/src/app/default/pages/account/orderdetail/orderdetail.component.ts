@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription, Observable, Observer } from 'rxjs';
 // invoice pdf
 import * as pdfMake from 'pdfmake/build/pdfmake.js';
-import * as pdfFonts from 'pdfmake/build/vfs_fonts.js';
+import * as pdfFonts from 'pdfmake/build/vfs_fonts.js'; 
 
 @Component({
   selector: 'app-order-detail',

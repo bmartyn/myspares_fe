@@ -10,7 +10,8 @@ import {
   OnChanges
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MatDialog, MatSnackBar } from '@angular/material/snack-bar';
+import {  MatSnackBar } from '@angular/material/snack-bar';
+import { MatDialog } from '@angular/material/dialog';
 import { ProductDialogComponent } from '../../shared/components/products-carousel/product-dialog/product-dialog.component';
 import { ListsSandbox } from '../../../core/lists/lists.sandbox';
 import { ConfigService } from '../../../core/service/config.service';
@@ -25,6 +26,9 @@ import { Subscription } from 'rxjs';
 export class ProductsComponent implements OnInit, OnDestroy {
   // decorator
   @ViewChild('sidenav') sidenav: any;
+
+  count= 10;
+  page= 1;
   // side nav
   public sidenavOpen = true;
   // card view

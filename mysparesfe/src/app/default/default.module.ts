@@ -4,7 +4,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule, HTTP_INTERCEPTORS, HttpClient} from '@angular/common/http';
 import {NgxSpinnerModule} from 'ngx-spinner';
 import {OverlayContainer, Overlay} from '@angular/cdk/overlay';
-import {MAT_MENU_SCROLL_STRATEGY} from '@angular/material/snack-bar';
+import {MAT_MENU_SCROLL_STRATEGY} from '@angular/material/menu';
 import {CustomOverlayContainer} from './theme/utils/custom-overlay-container';
 import {menuScrollStrategy} from './theme/utils/scroll-strategy';
 import {AppSettings} from './app.settings';
@@ -18,7 +18,7 @@ import {DefaultRoutingModule} from './default.routing';
 import {SharedModule} from './shared/shared.module';
 
 // components
-import {CONTAINERS} from './common/index';
+import {ContainerModule} from './common/index';
 import {NotFoundComponent} from './pages/not-found/not-found.component';
 import {DefaultComponent} from './default.component';
 
@@ -44,6 +44,7 @@ import { APP_BASE_HREF } from '@angular/common';
         HttpClientModule,
         NgxSpinnerModule,
         SharedModule,
+        ContainerModule,
         ComponentsModule,
         EffectsModule.forRoot([ListsEffect]),
         StoreModule.forRoot(reducers, {metaReducers}),
@@ -58,8 +59,8 @@ import { APP_BASE_HREF } from '@angular/common';
     declarations: [
         DefaultComponent,
         NotFoundComponent,
-        DetailPageComponent,
-        CONTAINERS.LayoutContainerComponent,
+        DetailPageComponent, 
+       // CONTAINERS.LayoutContainerComponent,
         UnderDevelopingComponent
     ],
     providers: [
